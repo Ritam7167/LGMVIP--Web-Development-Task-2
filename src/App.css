@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background:url('./bg.jpg') no-repeat center center/cover;
+  margin-top: 34px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Russo One', sans-serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NavBar Styling */
+.navbar_section{
+  background-color: rgb(63, 58, 58);
+  position: absolute;
+  top: 0px;
+  height: 14%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.nav-part{
+  margin-top:0px;
+  height:100px;
+}
+.Nav-1{
+  margin-top: -72px;
+  transform: translate(-50%,-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Navbar: Button  */
+.button{
+  height: 65px;
+  width: 250px;
+  font-size: 23px;
+  margin-left: 51%;
+  margin-top: 51px;
+  border-radius: 100px;
+  color: rgb(86, 243, 248);
+  background: #030408;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: 5px solid rgb(86, 243, 248);
+  transition: 1.5s;
+  font-family: 'Tinos', serif !important;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.navbar_section button:hover{
+  box-shadow: 0 5px 50px 0 rgb(86, 243, 248) inset, 0 5px 50px 0 rgb(86, 243, 248);
+  text-shadow: 0 0 5px rgb(86, 243, 248),0 0 5px rgb(86, 243, 248);
+  cursor: pointer;
+}
+.container-part {
+  color: crimson;
+  font-size: 2.5rem;
+  font-weight: bold;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  font-size: 3.8rem;
+  font-family: 'Russo One', sans-serif;
+}
+/* Navbar Heading */
+#nav-head {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  margin-left: 0px;
+  padding-left: 419px;
+  color: rgb(45, 223, 45);
+  font-size: 50px;
+  font-family: 'Russo One', sans-serif;
+}
+#nav-head:hover{
+  color: coral;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Container Part */
+.container{
+  margin-top: 295px;
+  margin-left: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
